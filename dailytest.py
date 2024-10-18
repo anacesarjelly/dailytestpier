@@ -60,7 +60,7 @@ workbook_id = '4a8e0197-fd49-416e-b594-6ff90c5ac4b8'
 
 sender_email = 'roberto@networkmedia.com'
 creators = [
-    {'name': 'Allie Sparks', 'pay_to': 'Allie Sparks', 'email': 'pier@networkmedia.com', 'manager_1': 'Allie Sparks',}
+    {'name': 'Allie Sparks', 'pay_to': 'Allie Sparks', 'email': 'pier@networkmedia.com', 'manager_1': 'Allie Sparks','type':'Allie Sparks'}
 ]
 subject = "Check Now How Much You Made!"
 body = "Your earnings"
@@ -122,6 +122,10 @@ try:
 
                     if view.id in creator_filter_views:
                         image_request_options.vf(creator_type, creator_names)
+
+                    if view.id in creator_type_name_creator:
+                        image_request_options.vf('Creator', creator_names)
+
                     
                     server.views.populate_image(view, image_request_options)
 
