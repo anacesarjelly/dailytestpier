@@ -123,9 +123,6 @@ try:
                     if view.id in creator_filter_views:
                         image_request_options.vf(creator_type, creator_names)
                     
-                    if view.id in creator_type_name_creator:
-                        image_request_options.vf('Creator', creator_names)
-
                     server.views.populate_image(view, image_request_options)
 
                     if view.id == dashboard_principal_id:
