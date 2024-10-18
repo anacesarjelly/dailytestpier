@@ -60,7 +60,7 @@ workbook_id = '4a8e0197-fd49-416e-b594-6ff90c5ac4b8'
 
 sender_email = 'roberto@networkmedia.com'
 creators = [
-    {'name': 'Allie Sparks', 'pay_to': 'Allie Sparks', 'email': 'pier@networkmedia.com', 'manager_1': 'Allie Sparks','type':'Allie Sparks'}
+    {'name': 'Allie Sparks', 'pay_to': 'Allie Sparks', 'email': 'pier@networkmedia.com', 'manager_1': 'Allie Sparks','type':'Creator'}
 ]
 subject = "Check Now How Much You Made!"
 body = "Your earnings"
